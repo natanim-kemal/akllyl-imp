@@ -16,10 +16,10 @@ export default function BookPage() {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         setStatus("submitting");
-        // Simulate API call
+        
         setTimeout(() => {
             setStatus("success");
-            // Could reset form here
+            
         }, 1500);
     };
 
