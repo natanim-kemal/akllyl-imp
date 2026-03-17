@@ -76,7 +76,7 @@ export function FeaturedGalleries() {
                                 />
                                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500" />
 
-                                {/* Overlay Text for better readability on hover or just style */}
+                                {}
                                 <div className="absolute bottom-0 left-0 right-0 p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                                     <h3 className="text-3xl font-bold text-white mb-2 drop-shadow-md">{item.title}</h3>
                                     <p className="text-white/90 text-lg font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">{item.subtitle}</p>
@@ -94,6 +94,4 @@ export function FeaturedGalleries() {
     );
 }
 
-// Importing Button locally or ensuring it's available. 
-// Assuming Button component exists in "@/components/ui/Button" as per previous context.
 import { Button } from "@/components/ui/Button";
