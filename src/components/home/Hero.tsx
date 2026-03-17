@@ -5,7 +5,6 @@ import { useRef } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 
-// Placeholder images
 const IMAGES = [
     "https://picsum.photos/seed/wedding/800/1200",
     "https://picsum.photos/seed/portrait/800/1200",
@@ -19,14 +18,14 @@ export function Hero() {
     return (
         <section ref={containerRef} className="relative w-full h-[85vh] min-h-[700px] overflow-hidden bg-stone-900 flex items-center justify-center">
 
-            {/* Background Columns */}
+            {}
             <div className="absolute inset-0 grid grid-cols-2 md:grid-cols-4 gap-0 h-full">
                 {IMAGES.map((src, i) => (
                     <Column key={i} src={src} index={i} />
                 ))}
             </div>
 
-            {/* Overlay Content */}
+            {}
             <div className="relative z-10 text-center text-white p-6 max-w-5xl mx-auto flex flex-col items-center justify-center h-full">
                 <motion.h1
                     className="text-6xl md:text-8xl font-bold mb-6 tracking-tight drop-shadow-2xl leading-none"
@@ -60,7 +59,7 @@ export function Hero() {
                 </motion.div>
             </div>
 
-            {/* Gradient Overlay for text readability - mimic source site depth */}
+            {}
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/60 pointer-events-none" />
         </section>
     );
