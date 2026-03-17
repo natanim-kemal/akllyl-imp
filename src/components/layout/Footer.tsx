@@ -7,7 +7,7 @@ export function Footer() {
             <div className="container-custom">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
 
-                    {/* Brand Column */}
+                    {}
                     <div className="md:col-span-1">
                         <h2 className="text-3xl font-bold font-[family-name:var(--font-outfit)] mb-6">Akllyl</h2>
                         <p className="text-lg font-medium leading-relaxed opacity-90">
@@ -15,7 +15,7 @@ export function Footer() {
                         </p>
                     </div>
 
-                    {/* Navigation */}
+                    {}
                     <div>
                         <h3 className="text-xl font-bold mb-6 font-[family-name:var(--font-outfit)]">Explore</h3>
                         <ul className="space-y-4 font-medium">
@@ -26,7 +26,7 @@ export function Footer() {
                         </ul>
                     </div>
 
-                    {/* Contact */}
+                    {}
                     <div>
                         <h3 className="text-xl font-bold mb-6 font-[family-name:var(--font-outfit)]">Contact</h3>
                         <ul className="space-y-4 font-medium">
@@ -45,7 +45,7 @@ export function Footer() {
                         </ul>
                     </div>
 
-                    {/* Social */}
+                    {}
                     <div>
                         <h3 className="text-xl font-bold mb-6 font-[family-name:var(--font-outfit)]">Follow Us</h3>
                         <div className="flex gap-4">
