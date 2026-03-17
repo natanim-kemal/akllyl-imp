@@ -52,7 +52,6 @@ export function Header() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    // Derived classes for text colors
     const textColorClass = isScrolled ? "text-stone-900" : "text-white";
     const navHoverClass = "hover:text-[var(--color-primary)]";
 
@@ -64,12 +63,12 @@ export function Header() {
             )}
         >
             <div className="container-custom flex items-center justify-between">
-                {/* Logo */}
+                {}
                 <Link href="/" className={cn("text-2xl font-bold tracking-tight font-[family-name:var(--font-outfit)] relative z-50 transition-colors", textColorClass)}>
                     Akllyl
                 </Link>
 
-                {/* Desktop Nav */}
+                {}
                 <nav className="hidden md:flex items-center gap-8">
                     {NAV_ITEMS.map((item) => (
                         <div
@@ -91,7 +90,7 @@ export function Header() {
                                 {item.children && <ChevronDown className="ml-1 w-4 h-4" />}
                             </Link>
 
-                            {/* Dropdown */}
+                            {}
                             {item.children && (
                                 <div
                                     className={cn(
@@ -122,7 +121,7 @@ export function Header() {
                     </Button>
                 </div>
 
-                {/* Mobile Toggle */}
+                {}
                 <button
                     className={cn("md:hidden p-2 relative z-50 transition-colors", mobileMenuOpen ? "text-stone-900" : textColorClass)}
                     onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -131,7 +130,7 @@ export function Header() {
                 </button>
             </div>
 
-            {/* Mobile Menu Overlay */}
+            {}
             {mobileMenuOpen && (
                 <div className="fixed inset-0 bg-white z-40 overflow-y-auto p-6 md:hidden flex flex-col pt-20">
                     <div className="flex flex-col gap-6">
